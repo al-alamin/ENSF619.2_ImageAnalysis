@@ -1,0 +1,106 @@
+simulated
+Baseline_model_1
+Job started
+Fri Nov 26 14:47:46 MST 2021
+=========================================================================
+Necessary env loaded
+Going to train model on  simulated
+
+
+
+
+**************************************************
+**************************************************
+**************************************************************************************************** Going to print if GPU is used
+**************************************************************************************************** Num GPUs Available: 1
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Total 10171 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/train/
+Total 1388 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/validation/
+Total 1285 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/test/
+Over
+Base /home/mdabdullahal.alamin/alamin/face_mask
+ Data dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/
+Train dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/train/
+ Validation dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/validation/
+ Test dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/test/
+Found 10171 images belonging to 2 classes.
+Found 1388 images belonging to 2 classes.
+Found 1285 images belonging to 2 classes.
+**************************************************************************************************** ===> Model name: Baseline_model_1
+
+
+
+ =====================================> Current Model output dir: /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/Baseline_model_1   ===============================
+Going to REMOVE and CREATE directory: /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/Baseline_model_1
+Creating directory /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/Baseline_model_1.
+Model summary has been saved to file: /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/Baseline_model_1/model_summary.txt
+Model: "Baseline_1VGG"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+batch_normalization (BatchNo (None, 128, 128, 3)       12        
+_________________________________________________________________
+conv2d (Conv2D)              (None, 128, 128, 32)      896       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 64, 64, 32)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 131072)            0         
+_________________________________________________________________
+dense (Dense)                (None, 128)               16777344  
+_________________________________________________________________
+dense_1 (Dense)              (None, 2)                 258       
+=================================================================
+Total params: 16,778,510
+Trainable params: 16,778,504
+Non-trainable params: 6
+_________________________________________________________________
+2021-11-26 14:48:09.777281: W tensorflow/stream_executor/gpu/asm_compiler.cc:63] Running ptxas --version returned 256
+2021-11-26 14:48:09.814598: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+=========================> Epoch is finished and validation accuracy is: 0.96
+=========================> Epoch is finished and validation accuracy is: 0.98
+=========================> Epoch is finished and validation accuracy is: 0.98
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 0.98
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 0.98
+=========================> Epoch is finished and validation accuracy is: 0.99
+Trining over
+       loss  accuracy  val_loss  val_accuracy      lr
+0  0.478257  0.851539  0.137039      0.957493  0.0001
+1  0.086138  0.979058  0.070763      0.981988  0.0001
+2  0.050015  0.986039  0.062412      0.980548  0.0001
+3  0.037295  0.989578  0.052170      0.986311  0.0001
+4  0.035269  0.990561  0.071909      0.976225  0.0001
+5  0.029326  0.991643  0.033479      0.988473  0.0001
+6  0.025041  0.992626  0.051025      0.985591  0.0001
+7  0.028449  0.991938  0.043572      0.984870  0.0001
+8  0.024391  0.992724  0.038684      0.988473  0.0001
+ 1/11 [=>............................] - ETA: 1:09 - loss: 0.0011 - accuracy: 1.0000 2/11 [====>.........................] - ETA: 30s - loss: 0.0014 - accuracy: 1.0000  3/11 [=======>......................] - ETA: 28s - loss: 0.0017 - accuracy: 1.0000 4/11 [=========>....................] - ETA: 24s - loss: 0.0019 - accuracy: 1.0000 5/11 [============>.................] - ETA: 16s - loss: 0.0017 - accuracy: 1.0000 6/11 [===============>..............] - ETA: 11s - loss: 0.0027 - accuracy: 1.0000 7/11 [==================>...........] - ETA: 7s - loss: 0.0048 - accuracy: 0.9989  8/11 [====================>.........] - ETA: 5s - loss: 0.0064 - accuracy: 0.9980 9/11 [=======================>......] - ETA: 3s - loss: 0.0063 - accuracy: 0.998311/11 [==============================] - ETA: 0s - loss: 0.0062 - accuracy: 0.998411/11 [==============================] - 20s 1s/step - loss: 0.0062 - accuracy: 0.9984
+Loss: 0.006 Accuracy: 99.844%
+2
+Model Test dataset:
+Accuracy: 99.844%
+Loss: 0.006
+Total training time 2062 seconds 0.6 Hours
+
+Training epoch stats:        loss  accuracy  val_loss  val_accuracy      lr
+0  0.478257  0.851539  0.137039      0.957493  0.0001
+1  0.086138  0.979058  0.070763      0.981988  0.0001
+2  0.050015  0.986039  0.062412      0.980548  0.0001
+3  0.037295  0.989578  0.052170      0.986311  0.0001
+4  0.035269  0.990561  0.071909      0.976225  0.0001
+5  0.029326  0.991643  0.033479      0.988473  0.0001
+6  0.025041  0.992626  0.051025      0.985591  0.0001
+7  0.028449  0.991938  0.043572      0.984870  0.0001
+8  0.024391  0.992724  0.038684      0.988473  0.0001
+
+Incorrectly Predicted Samples:
+without_mask/256.png
+without_mask/454.png
+
+Job ended
+Fri Nov 26 15:23:13 MST 2021

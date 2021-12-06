@@ -1,0 +1,178 @@
+real
+VGG19
+Job started
+Fri Nov 26 13:47:13 MST 2021
+=========================================================================
+Necessary env loaded
+Going to train model on  real
+
+
+
+
+**************************************************
+**************************************************
+**************************************************************************************************** Going to print if GPU is used
+**************************************************************************************************** Num GPUs Available: 1
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Total 10170 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/train/
+Total 1388 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/validation/
+Total 1285 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/test/
+Over
+Base /home/mdabdullahal.alamin/alamin/face_mask
+ Data dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/
+Train dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/train/
+ Validation dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/validation/
+ Test dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/test/
+Found 10170 images belonging to 2 classes.
+Found 1388 images belonging to 2 classes.
+Found 1285 images belonging to 2 classes.
+**************************************************************************************************** ===> Model name: VGG19
+
+
+
+ =====================================> Current Model output dir: /home/mdabdullahal.alamin/alamin/face_mask/model_output/real/batch_jobs/VGG19   ===============================
+Going to REMOVE and CREATE directory: /home/mdabdullahal.alamin/alamin/face_mask/model_output/real/batch_jobs/VGG19
+Creating directory /home/mdabdullahal.alamin/alamin/face_mask/model_output/real/batch_jobs/VGG19.
+Model summary has been saved to file: /home/mdabdullahal.alamin/alamin/face_mask/model_output/real/batch_jobs/VGG19/model_summary.txt
+Model: "vgg19"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 128, 128, 3)]     0         
+_________________________________________________________________
+block1_conv1 (Conv2D)        (None, 128, 128, 64)      1792      
+_________________________________________________________________
+block1_conv2 (Conv2D)        (None, 128, 128, 64)      36928     
+_________________________________________________________________
+block1_pool (MaxPooling2D)   (None, 64, 64, 64)        0         
+_________________________________________________________________
+block2_conv1 (Conv2D)        (None, 64, 64, 128)       73856     
+_________________________________________________________________
+block2_conv2 (Conv2D)        (None, 64, 64, 128)       147584    
+_________________________________________________________________
+block2_pool (MaxPooling2D)   (None, 32, 32, 128)       0         
+_________________________________________________________________
+block3_conv1 (Conv2D)        (None, 32, 32, 256)       295168    
+_________________________________________________________________
+block3_conv2 (Conv2D)        (None, 32, 32, 256)       590080    
+_________________________________________________________________
+block3_conv3 (Conv2D)        (None, 32, 32, 256)       590080    
+_________________________________________________________________
+block3_conv4 (Conv2D)        (None, 32, 32, 256)       590080    
+_________________________________________________________________
+block3_pool (MaxPooling2D)   (None, 16, 16, 256)       0         
+_________________________________________________________________
+block4_conv1 (Conv2D)        (None, 16, 16, 512)       1180160   
+_________________________________________________________________
+block4_conv2 (Conv2D)        (None, 16, 16, 512)       2359808   
+_________________________________________________________________
+block4_conv3 (Conv2D)        (None, 16, 16, 512)       2359808   
+_________________________________________________________________
+block4_conv4 (Conv2D)        (None, 16, 16, 512)       2359808   
+_________________________________________________________________
+block4_pool (MaxPooling2D)   (None, 8, 8, 512)         0         
+_________________________________________________________________
+block5_conv1 (Conv2D)        (None, 8, 8, 512)         2359808   
+_________________________________________________________________
+block5_conv2 (Conv2D)        (None, 8, 8, 512)         2359808   
+_________________________________________________________________
+block5_conv3 (Conv2D)        (None, 8, 8, 512)         2359808   
+_________________________________________________________________
+block5_conv4 (Conv2D)        (None, 8, 8, 512)         2359808   
+_________________________________________________________________
+block5_pool (MaxPooling2D)   (None, 4, 4, 512)         0         
+_________________________________________________________________
+flatten (Flatten)            (None, 8192)              0         
+_________________________________________________________________
+fc1 (Dense)                  (None, 4096)              33558528  
+_________________________________________________________________
+fc2 (Dense)                  (None, 4096)              16781312  
+_________________________________________________________________
+predictions (Dense)          (None, 2)                 8194      
+=================================================================
+Total params: 70,372,418
+Trainable params: 70,372,418
+Non-trainable params: 0
+_________________________________________________________________
+2021-11-26 13:47:32.296076: W tensorflow/stream_executor/gpu/asm_compiler.cc:63] Running ptxas --version returned 256
+2021-11-26 13:47:32.334287: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+=========================> Epoch is finished and validation accuracy is: 0.93
+=========================> Epoch is finished and validation accuracy is: 0.94
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.88
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.98
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 0.98
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 0.99
+Trining over
+        loss  accuracy  val_loss  val_accuracy       lr
+0   0.341002  0.839430  0.188204      0.927233  0.00010
+1   0.159773  0.939135  0.139132      0.940202  0.00010
+2   0.116373  0.959390  0.079705      0.973343  0.00010
+3   0.103899  0.966765  0.323645      0.881844  0.00010
+4   0.090621  0.972665  0.078929      0.974784  0.00010
+5   0.070933  0.977188  0.060588      0.982709  0.00010
+6   0.057490  0.981613  0.053850      0.985591  0.00010
+7   0.053563  0.981219  0.039357      0.987752  0.00010
+8   0.055011  0.984071  0.077476      0.977666  0.00010
+9   0.047208  0.986726  0.040605      0.985591  0.00010
+10  0.028501  0.991347  0.027718      0.987752  0.00005
+11  0.023122  0.992330  0.033789      0.989914  0.00005
+12  0.023266  0.993215  0.028766      0.989914  0.00005
+13  0.019623  0.994199  0.014744      0.995677  0.00005
+14  0.020241  0.994002  0.021265      0.995677  0.00005
+15  0.021262  0.994199  0.031711      0.988473  0.00005
+16  0.017448  0.994592  0.016573      0.993516  0.00005
+ 1/11 [=>............................] - ETA: 12s - loss: 3.1847e-06 - accuracy: 1.0000 2/11 [====>.........................] - ETA: 6s - loss: 2.9051e-04 - accuracy: 1.0000  3/11 [=======>......................] - ETA: 4s - loss: 2.1403e-04 - accuracy: 1.0000 4/11 [=========>....................] - ETA: 3s - loss: 1.7907e-04 - accuracy: 1.0000 5/11 [============>.................] - ETA: 3s - loss: 1.4629e-04 - accuracy: 1.0000 6/11 [===============>..............] - ETA: 2s - loss: 0.0013 - accuracy: 1.0000     7/11 [==================>...........] - ETA: 1s - loss: 0.0037 - accuracy: 0.9989 8/11 [====================>.........] - ETA: 1s - loss: 0.0219 - accuracy: 0.9951 9/11 [=======================>......] - ETA: 0s - loss: 0.0231 - accuracy: 0.993910/11 [==========================>...] - ETA: 0s - loss: 0.0240 - accuracy: 0.992211/11 [==============================] - ETA: 0s - loss: 0.0239 - accuracy: 0.992211/11 [==============================] - 10s 852ms/step - loss: 0.0239 - accuracy: 0.9922
+Loss: 0.024 Accuracy: 99.222%
+10
+Model Test dataset:
+Accuracy: 99.222%
+Loss: 0.024
+Total training time 2355 seconds 0.7 Hours
+
+Training epoch stats:         loss  accuracy  val_loss  val_accuracy       lr
+0   0.341002  0.839430  0.188204      0.927233  0.00010
+1   0.159773  0.939135  0.139132      0.940202  0.00010
+2   0.116373  0.959390  0.079705      0.973343  0.00010
+3   0.103899  0.966765  0.323645      0.881844  0.00010
+4   0.090621  0.972665  0.078929      0.974784  0.00010
+5   0.070933  0.977188  0.060588      0.982709  0.00010
+6   0.057490  0.981613  0.053850      0.985591  0.00010
+7   0.053563  0.981219  0.039357      0.987752  0.00010
+8   0.055011  0.984071  0.077476      0.977666  0.00010
+9   0.047208  0.986726  0.040605      0.985591  0.00010
+10  0.028501  0.991347  0.027718      0.987752  0.00005
+11  0.023122  0.992330  0.033789      0.989914  0.00005
+12  0.023266  0.993215  0.028766      0.989914  0.00005
+13  0.019623  0.994199  0.014744      0.995677  0.00005
+14  0.020241  0.994002  0.021265      0.995677  0.00005
+15  0.021262  0.994199  0.031711      0.988473  0.00005
+16  0.017448  0.994592  0.016573      0.993516  0.00005
+
+Incorrectly Predicted Samples:
+without_mask/1216.jpg
+without_mask/320.jpg
+without_mask/36.jpg
+without_mask/378.jpg
+without_mask/402.jpg
+without_mask/560.jpg
+without_mask/561.jpg
+without_mask/827.jpg
+without_mask/928.jpg
+without_mask/936.jpg
+
+Job ended
+Fri Nov 26 14:27:09 MST 2021

@@ -1,0 +1,119 @@
+simulated
+EfficientNet_transfer_learning
+Job started
+Fri Nov 26 14:47:46 MST 2021
+=========================================================================
+Necessary env loaded
+Going to train model on  simulated
+
+
+
+
+**************************************************
+**************************************************
+**************************************************************************************************** Going to print if GPU is used
+**************************************************************************************************** Num GPUs Available: 1
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Total 10171 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/train/
+Total 1388 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/validation/
+Total 1285 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/test/
+Over
+Base /home/mdabdullahal.alamin/alamin/face_mask
+ Data dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/
+Train dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/train/
+ Validation dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/validation/
+ Test dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/test/
+Found 10171 images belonging to 2 classes.
+Found 1388 images belonging to 2 classes.
+Found 1285 images belonging to 2 classes.
+**************************************************************************************************** ===> Model name: EfficientNet_transfer_learning
+
+
+
+ =====================================> Current Model output dir: /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/EfficientNet_transfer_learning   ===============================
+Going to REMOVE and CREATE directory: /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/EfficientNet_transfer_learning
+Creating directory /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/EfficientNet_transfer_learning.
+Model: "model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 128, 128, 3)]     0         
+_________________________________________________________________
+efficientnetb7 (Functional)  (None, 4, 4, 2560)        64097687  
+_________________________________________________________________
+flatten (Flatten)            (None, 40960)             0         
+_________________________________________________________________
+dense (Dense)                (None, 2)                 81922     
+=================================================================
+Total params: 64,179,609
+Trainable params: 81,922
+Non-trainable params: 64,097,687
+_________________________________________________________________
+None
+Model summary has been saved to file: /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/EfficientNet_transfer_learning/model_summary.txt
+Model: "model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 128, 128, 3)]     0         
+_________________________________________________________________
+efficientnetb7 (Functional)  (None, 4, 4, 2560)        64097687  
+_________________________________________________________________
+flatten (Flatten)            (None, 40960)             0         
+_________________________________________________________________
+dense (Dense)                (None, 2)                 81922     
+=================================================================
+Total params: 64,179,609
+Trainable params: 81,922
+Non-trainable params: 64,097,687
+_________________________________________________________________
+2021-11-26 14:48:52.446622: W tensorflow/stream_executor/gpu/asm_compiler.cc:63] Running ptxas --version returned 256
+2021-11-26 14:48:52.487963: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+Trining over
+       loss  accuracy  val_loss  val_accuracy      lr
+0  0.103235  0.960574  0.033669      0.991354  0.0001
+1  0.025751  0.993708  0.020443      0.994957  0.0001
+2  0.017435  0.995772  0.015214      0.995677  0.0001
+3  0.011940  0.997050  0.011386      0.997118  0.0001
+4  0.011469  0.997640  0.008346      0.999280  0.0001
+5  0.008969  0.998132  0.009334      0.997118  0.0001
+6  0.007183  0.998525  0.008451      0.997839  0.0001
+7  0.007373  0.998722  0.009728      0.997839  0.0001
+ 1/11 [=>............................] - ETA: 2:16 - loss: 0.0011 - accuracy: 1.0000 2/11 [====>.........................] - ETA: 37s - loss: 0.0066 - accuracy: 0.9961  3/11 [=======>......................] - ETA: 33s - loss: 0.0052 - accuracy: 0.9974 4/11 [=========>....................] - ETA: 29s - loss: 0.0049 - accuracy: 0.9980 5/11 [============>.................] - ETA: 20s - loss: 0.0044 - accuracy: 0.9984 6/11 [===============>..............] - ETA: 14s - loss: 0.0124 - accuracy: 0.9974 7/11 [==================>...........] - ETA: 10s - loss: 0.0121 - accuracy: 0.9978 8/11 [====================>.........] - ETA: 7s - loss: 0.0127 - accuracy: 0.9980  9/11 [=======================>......] - ETA: 4s - loss: 0.0142 - accuracy: 0.996510/11 [==========================>...] - ETA: 1s - loss: 0.0141 - accuracy: 0.996111/11 [==============================] - ETA: 0s - loss: 0.0141 - accuracy: 0.996111/11 [==============================] - 48s 3s/step - loss: 0.0141 - accuracy: 0.9961
+Loss: 0.014 Accuracy: 99.611%
+5
+Model Test dataset:
+Accuracy: 99.611%
+Loss: 0.014
+Total training time 2212 seconds 0.6 Hours
+
+Training epoch stats:        loss  accuracy  val_loss  val_accuracy      lr
+0  0.103235  0.960574  0.033669      0.991354  0.0001
+1  0.025751  0.993708  0.020443      0.994957  0.0001
+2  0.017435  0.995772  0.015214      0.995677  0.0001
+3  0.011940  0.997050  0.011386      0.997118  0.0001
+4  0.011469  0.997640  0.008346      0.999280  0.0001
+5  0.008969  0.998132  0.009334      0.997118  0.0001
+6  0.007183  0.998525  0.008451      0.997839  0.0001
+7  0.007373  0.998722  0.009728      0.997839  0.0001
+
+Incorrectly Predicted Samples:
+mask/1233.jpg
+without_mask/1039.png
+without_mask/590.png
+without_mask/740.png
+without_mask/92.png
+
+Job ended
+Fri Nov 26 15:26:57 MST 2021

@@ -1,0 +1,174 @@
+real
+Job started
+Fri Nov 26 12:25:03 MST 2021
+Baseline_model_1
+=========================================================================
+Necessary env loaded
+Going to train model on  real
+
+
+
+
+**************************************************
+**************************************************
+**************************************************************************************************** Going to print if GPU is used
+**************************************************************************************************** Num GPUs Available: 1
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Total 10170 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/train/
+Total 1388 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/validation/
+Total 1285 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/test/
+Over
+Base /home/mdabdullahal.alamin/alamin/face_mask
+ Data dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/
+Train dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/train/
+ Validation dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/validation/
+ Test dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/RMFD/organized/test/
+Found 10170 images belonging to 2 classes.
+Found 1388 images belonging to 2 classes.
+Found 1285 images belonging to 2 classes.
+**************************************************************************************************** ===> Model name: Baseline_model_1
+
+
+
+ =====================================> Current Model output dir: /home/mdabdullahal.alamin/alamin/face_mask/model_output/real/batch_jobs/Baseline_model_1   ===============================
+Going to REMOVE and CREATE directory: /home/mdabdullahal.alamin/alamin/face_mask/model_output/real/batch_jobs/Baseline_model_1
+Creating directory /home/mdabdullahal.alamin/alamin/face_mask/model_output/real/batch_jobs/Baseline_model_1.
+Model summary has been saved to file: /home/mdabdullahal.alamin/alamin/face_mask/model_output/real/batch_jobs/Baseline_model_1/model_summary.txt
+Model: "Baseline_1VGG"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+batch_normalization (BatchNo (None, 128, 128, 3)       12        
+_________________________________________________________________
+conv2d (Conv2D)              (None, 128, 128, 32)      896       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 64, 64, 32)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 131072)            0         
+_________________________________________________________________
+dense (Dense)                (None, 128)               16777344  
+_________________________________________________________________
+dense_1 (Dense)              (None, 2)                 258       
+=================================================================
+Total params: 16,778,510
+Trainable params: 16,778,504
+Non-trainable params: 6
+_________________________________________________________________
+2021-11-26 12:25:18.729014: W tensorflow/stream_executor/gpu/asm_compiler.cc:63] Running ptxas --version returned 256
+2021-11-26 12:25:18.760710: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+=========================> Epoch is finished and validation accuracy is: 0.91
+=========================> Epoch is finished and validation accuracy is: 0.93
+=========================> Epoch is finished and validation accuracy is: 0.94
+=========================> Epoch is finished and validation accuracy is: 0.95
+=========================> Epoch is finished and validation accuracy is: 0.96
+=========================> Epoch is finished and validation accuracy is: 0.94
+=========================> Epoch is finished and validation accuracy is: 0.96
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.96
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.98
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.98
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.97
+=========================> Epoch is finished and validation accuracy is: 0.98
+Trining over
+        loss  accuracy  val_loss  val_accuracy        lr
+0   0.314295  0.886824  0.259799      0.909222  0.000100
+1   0.195321  0.923795  0.180447      0.929395  0.000100
+2   0.171529  0.936382  0.164296      0.938040  0.000100
+3   0.160998  0.936382  0.147761      0.946686  0.000100
+4   0.134199  0.950148  0.123203      0.956772  0.000100
+5   0.126393  0.951622  0.155423      0.940922  0.000100
+6   0.123684  0.953196  0.105978      0.961816  0.000100
+7   0.108144  0.958505  0.097334      0.966138  0.000100
+8   0.099470  0.963520  0.099936      0.961816  0.000100
+9   0.091778  0.966667  0.088504      0.971182  0.000100
+10  0.083169  0.971190  0.091877      0.968300  0.000050
+11  0.081112  0.972075  0.084817      0.970461  0.000050
+12  0.075538  0.972271  0.086826      0.974063  0.000050
+13  0.078654  0.970305  0.084574      0.971182  0.000050
+14  0.075399  0.974140  0.093809      0.970461  0.000050
+15  0.076134  0.971681  0.079275      0.974063  0.000050
+16  0.070070  0.974140  0.079492      0.972622  0.000050
+17  0.069013  0.976401  0.072324      0.976945  0.000050
+18  0.066921  0.976794  0.075655      0.974784  0.000050
+19  0.063219  0.977089  0.073031      0.971902  0.000050
+20  0.063056  0.976893  0.067219      0.978386  0.000025
+21  0.060969  0.977778  0.082974      0.974063  0.000025
+22  0.059500  0.980039  0.077540      0.974063  0.000025
+23  0.057063  0.980334  0.067900      0.975504  0.000025
+ 1/11 [=>............................] - ETA: 9s - loss: 0.0181 - accuracy: 0.9922 2/11 [====>.........................] - ETA: 4s - loss: 0.0184 - accuracy: 0.9922 3/11 [=======>......................] - ETA: 3s - loss: 0.0174 - accuracy: 0.9948 4/11 [=========>....................] - ETA: 2s - loss: 0.0180 - accuracy: 0.9941 5/11 [============>.................] - ETA: 2s - loss: 0.0197 - accuracy: 0.9922 6/11 [===============>..............] - ETA: 1s - loss: 0.0251 - accuracy: 0.9909 7/11 [==================>...........] - ETA: 1s - loss: 0.0355 - accuracy: 0.9866 8/11 [====================>.........] - ETA: 0s - loss: 0.0409 - accuracy: 0.9854 9/11 [=======================>......] - ETA: 0s - loss: 0.0428 - accuracy: 0.983511/11 [==============================] - ETA: 0s - loss: 0.0491 - accuracy: 0.980511/11 [==============================] - 4s 276ms/step - loss: 0.0491 - accuracy: 0.9805
+Loss: 0.049 Accuracy: 98.054%
+25
+Model Test dataset:
+Accuracy: 98.054%
+Loss: 0.049
+Total training time 2195 seconds 0.6 Hours
+
+Training epoch stats:         loss  accuracy  val_loss  val_accuracy        lr
+0   0.314295  0.886824  0.259799      0.909222  0.000100
+1   0.195321  0.923795  0.180447      0.929395  0.000100
+2   0.171529  0.936382  0.164296      0.938040  0.000100
+3   0.160998  0.936382  0.147761      0.946686  0.000100
+4   0.134199  0.950148  0.123203      0.956772  0.000100
+5   0.126393  0.951622  0.155423      0.940922  0.000100
+6   0.123684  0.953196  0.105978      0.961816  0.000100
+7   0.108144  0.958505  0.097334      0.966138  0.000100
+8   0.099470  0.963520  0.099936      0.961816  0.000100
+9   0.091778  0.966667  0.088504      0.971182  0.000100
+10  0.083169  0.971190  0.091877      0.968300  0.000050
+11  0.081112  0.972075  0.084817      0.970461  0.000050
+12  0.075538  0.972271  0.086826      0.974063  0.000050
+13  0.078654  0.970305  0.084574      0.971182  0.000050
+14  0.075399  0.974140  0.093809      0.970461  0.000050
+15  0.076134  0.971681  0.079275      0.974063  0.000050
+16  0.070070  0.974140  0.079492      0.972622  0.000050
+17  0.069013  0.976401  0.072324      0.976945  0.000050
+18  0.066921  0.976794  0.075655      0.974784  0.000050
+19  0.063219  0.977089  0.073031      0.971902  0.000050
+20  0.063056  0.976893  0.067219      0.978386  0.000025
+21  0.060969  0.977778  0.082974      0.974063  0.000025
+22  0.059500  0.980039  0.077540      0.974063  0.000025
+23  0.057063  0.980334  0.067900      0.975504  0.000025
+
+Incorrectly Predicted Samples:
+mask/1078.jpg
+mask/1253.jpg
+mask/683.jpg
+mask/771.jpg
+mask/898.jpg
+without_mask/1143.jpg
+without_mask/1151.jpg
+without_mask/1212.jpg
+without_mask/1216.jpg
+without_mask/154.jpg
+without_mask/175.jpg
+without_mask/217.jpg
+without_mask/320.jpg
+without_mask/327.jpg
+without_mask/378.jpg
+without_mask/537.jpg
+without_mask/561.jpg
+without_mask/687.jpg
+without_mask/74.jpg
+without_mask/77.jpg
+without_mask/796.jpg
+without_mask/89.jpg
+without_mask/892.jpg
+without_mask/922.jpg
+without_mask/933.jpg
+
+Job ended
+Fri Nov 26 13:02:04 MST 2021

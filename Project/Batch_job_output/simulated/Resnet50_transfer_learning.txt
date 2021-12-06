@@ -1,0 +1,124 @@
+simulated
+Resnet50_transfer_learning
+Job started
+Fri Nov 26 14:47:46 MST 2021
+=========================================================================
+Necessary env loaded
+Going to train model on  simulated
+
+
+
+
+**************************************************
+**************************************************
+**************************************************************************************************** Going to print if GPU is used
+**************************************************************************************************** Num GPUs Available: 1
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Total 10171 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/train/
+Total 1388 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/validation/
+Total 1285 images found in directory /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/test/
+Over
+Base /home/mdabdullahal.alamin/alamin/face_mask
+ Data dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/
+Train dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/train/
+ Validation dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/validation/
+ Test dir: /home/mdabdullahal.alamin/alamin/face_mask/dataset/masknet/organized/test/
+Found 10171 images belonging to 2 classes.
+Found 1388 images belonging to 2 classes.
+Found 1285 images belonging to 2 classes.
+**************************************************************************************************** ===> Model name: Resnet50_transfer_learning
+
+
+
+ =====================================> Current Model output dir: /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/Resnet50_transfer_learning   ===============================
+Going to REMOVE and CREATE directory: /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/Resnet50_transfer_learning
+Creating directory /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/Resnet50_transfer_learning.
+Model: "model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 128, 128, 3)]     0         
+_________________________________________________________________
+resnet50 (Functional)        (None, 4, 4, 2048)        23587712  
+_________________________________________________________________
+flatten (Flatten)            (None, 32768)             0         
+_________________________________________________________________
+dense (Dense)                (None, 2)                 65538     
+=================================================================
+Total params: 23,653,250
+Trainable params: 65,538
+Non-trainable params: 23,587,712
+_________________________________________________________________
+None
+Model summary has been saved to file: /home/mdabdullahal.alamin/alamin/face_mask/model_output/simulated/batch_jobs/Resnet50_transfer_learning/model_summary.txt
+Model: "model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 128, 128, 3)]     0         
+_________________________________________________________________
+resnet50 (Functional)        (None, 4, 4, 2048)        23587712  
+_________________________________________________________________
+flatten (Flatten)            (None, 32768)             0         
+_________________________________________________________________
+dense (Dense)                (None, 2)                 65538     
+=================================================================
+Total params: 23,653,250
+Trainable params: 65,538
+Non-trainable params: 23,587,712
+_________________________________________________________________
+2021-11-26 14:48:32.308152: W tensorflow/stream_executor/gpu/asm_compiler.cc:63] Running ptxas --version returned 256
+2021-11-26 14:48:32.345359: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+=========================> Epoch is finished and validation accuracy is: 0.98
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 0.99
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+=========================> Epoch is finished and validation accuracy is: 1.00
+Trining over
+        loss  accuracy  val_loss  val_accuracy       lr
+0   0.190381  0.945630  0.051698      0.984870  0.00010
+1   0.018950  0.992626  0.016404      0.995677  0.00010
+2   0.011743  0.995576  0.015450      0.994957  0.00010
+3   0.010546  0.996657  0.008669      0.997118  0.00010
+4   0.004567  0.998525  0.013735      0.995677  0.00010
+5   0.003318  0.999017  0.009485      0.997118  0.00010
+6   0.004710  0.998329  0.005275      0.998559  0.00010
+7   0.004774  0.998722  0.003601      0.999280  0.00010
+8   0.002821  0.998722  0.005213      0.997839  0.00010
+9   0.003704  0.998820  0.012286      0.996398  0.00010
+10  0.001287  0.999705  0.004876      0.999280  0.00005
+ 1/11 [=>............................] - ETA: 1:24 - loss: 3.9155e-05 - accuracy: 1.0000 2/11 [====>.........................] - ETA: 34s - loss: 2.0911e-05 - accuracy: 1.0000  3/11 [=======>......................] - ETA: 30s - loss: 4.9704e-05 - accuracy: 1.0000 4/11 [=========>....................] - ETA: 26s - loss: 3.7908e-05 - accuracy: 1.0000 5/11 [============>.................] - ETA: 18s - loss: 2.0226e-04 - accuracy: 1.0000 6/11 [===============>..............] - ETA: 12s - loss: 7.8611e-04 - accuracy: 1.0000 7/11 [==================>...........] - ETA: 8s - loss: 6.9596e-04 - accuracy: 1.0000  8/11 [====================>.........] - ETA: 5s - loss: 6.1755e-04 - accuracy: 1.0000 9/11 [=======================>......] - ETA: 3s - loss: 5.9452e-04 - accuracy: 1.000010/11 [==========================>...] - ETA: 1s - loss: 5.4134e-04 - accuracy: 1.000011/11 [==============================] - ETA: 0s - loss: 5.3929e-04 - accuracy: 1.000011/11 [==============================] - 29s 2s/step - loss: 5.3929e-04 - accuracy: 1.0000
+Loss: 0.001 Accuracy: 100.000%
+0
+Model Test dataset:
+Accuracy: 100.000%
+Loss: 0.001
+Total training time 2660 seconds 0.7 Hours
+
+Training epoch stats:         loss  accuracy  val_loss  val_accuracy       lr
+0   0.190381  0.945630  0.051698      0.984870  0.00010
+1   0.018950  0.992626  0.016404      0.995677  0.00010
+2   0.011743  0.995576  0.015450      0.994957  0.00010
+3   0.010546  0.996657  0.008669      0.997118  0.00010
+4   0.004567  0.998525  0.013735      0.995677  0.00010
+5   0.003318  0.999017  0.009485      0.997118  0.00010
+6   0.004710  0.998329  0.005275      0.998559  0.00010
+7   0.004774  0.998722  0.003601      0.999280  0.00010
+8   0.002821  0.998722  0.005213      0.997839  0.00010
+9   0.003704  0.998820  0.012286      0.996398  0.00010
+10  0.001287  0.999705  0.004876      0.999280  0.00005
+
+Incorrectly Predicted Samples:
+
+
+Job ended
+Fri Nov 26 15:33:39 MST 2021
