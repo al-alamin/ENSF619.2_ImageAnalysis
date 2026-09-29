@@ -1,0 +1,15 @@
+schema_version: 1
+summary: Course materials for ENSF619.2 Advanced Image Analysis and Machine Learning,
+  with assignment and project directories.
+state: unknown
+intended_readers:
+- Students and collaborators studying the image-analysis and machine-learning course
+  material.
+consult_when:
+- Locating course assignments or the course project.
+watch_when:
+- Changes to the course README, Assignment_01/, Assignment_04/ or Project/.
+current_capabilities:
+- README establishes the course purpose; Assignment_01/, Assignment_04/ and Project/
+  are tracked.
+planned_capabilities: []
